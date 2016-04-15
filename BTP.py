@@ -40,7 +40,8 @@ def get_grade(rollno,subject):
         return
 
 def read_excel(keyword,subject):
-        file_loc ='C:/Users/Santosh Kumar/Desktop/btp_evaluator_list_1st_september-1.xlsx'
+        #change the file location to where you put the file
+        file_loc ='./btp_evaluator_list_1st_september-1.xlsx'
         workbook = xlrd.open_workbook(file_loc)
         for i in range(4):
                 sheet= workbook.sheet_by_index(i)
